@@ -1,3 +1,15 @@
 spring:
   application:
     name: whatsapp-integration
+  main:
+    web-application-type: reactive
+
+whatsapp:
+  api-url: https://graph.facebook.com
+  token: YOUR_WHATSAPP_TOKEN
+  phone-number-id: YOUR_PHONE_NUMBER_ID
+
+logging:
+  level:
+    root: INFO
+    whatsapp_platform.whatsapp_integration: DEBUG
